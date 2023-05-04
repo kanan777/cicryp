@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.main-header{
+    padding-bottom: 1.25rem;
+    padding-top: 0.65rem;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-logo{
+    width: 8.75rem;
+    height: 2.75rem;
+    overflow: hidden;
+    margin-left: 2.8rem;
+}
+
+.main-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.search_input{
+    width: 19rem;
+    height: 2.25rem;
+    border-radius: 1rem;
+    border: 1px solid #E5E7EB;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    display: block;
+    margin-left: 2.8rem;
+    margin-right: 7.5rem;
+    transition: all .3s ease;
+    position: relative;
+}
+
+input::placeholder{
+    display: inline-block;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding-left: 1rem;
+}
+
+/* .search-input__div{
+    position: relative;
+} */
+
+/* .search-svg{
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 36px;
+    right: 760px;
+} */
+
+.search_input:focus{
+    border-color:rgba(37, 100, 235, 0.448);
+    -webkit-box-shadow: 0px 1px 2px rgba(37, 100, 235, 0.28), 0px 0px 0px 4px rgba(37, 100, 235, 0.28);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px rgba(37, 100, 235, 0.24);
+    outline: none;
+}
+
+.discover-svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* .menu-svg{
+    width: 36px;
+    height: 36px;
+} */
+
+.nav-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li{
+    display: inline-flex;
+}
+.discover-link{
+    display: inline-flex;
+}   
+
+.nav-list li a{
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: .4rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    color: #111827;
+}
+
+.nav-list li a:hover{
+    background-color:#f3f4f6;
+    border-radius: 1rem;
+}
+
+.border-right{
+    border-right: 1px solid #d1d5db;
+    height: 2rem;
+}
+
+.svg-button{
+    background-color: initial;
+    border: none;
+    border-radius: 2rem;
+    display: inline-block;
+    margin-left: 10px;
+    padding: .5rem;
+    transition: all .3s ease;
+}
+
+.svg-button:hover{
+    background-color: #E5E7EB;
+}
+
+.create-link{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0284c7;
+    min-width: 6rem;
+    max-width: 7.5rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 22rem;
+    margin-left: 1rem;
+    transition: all .3s ease;
+}
+
+.create-link:hover,.home-link:hover{
+    background-color: #0369a1;
+}
+.profile-img{
+    width: 2.25rem;
+    height: 2.25rem;
+    overflow: hidden;
+}
+
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-button{
+    background-color: initial;
+    border: none;
+    display: inline-block;
+    padding: .5rem;
+    transition: all .3s ease;
+    margin-left:1rem;
+}
+
+.profile-img{
+    border-radius: 22rem;
+    margin-left: .4rem;
+}
+
+.wallet__section{
+    max-width: 52rem;
+    min-height: 80vh;
+    margin: 4rem auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.wallet_h1{
+    font-size: 2.15rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.wallet_h4{
+    margin-top: 0.75rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.connect-wallet{
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.wallet-item{
+    border: 1px solid #c2c2c2;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin-bottom: 0.75rem;
+    transition: all 0.4s ease;
+}
+
+.mrg-top{
+    margin-top: 1.8rem;
+}
+
+.wallet-item_img{
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 8rem;
+    box-shadow: -16px 8px 161px -8px rgba(74, 74, 74, 0.75);
+    -webkit-box-shadow: -16px 8px 161px -8px rgba(74, 74, 74, 0.75);
+    -moz-box-shadow: -16px 8px 161px -8px rgba(74, 74, 74, 0.75);
+}
+
+.wallet-item_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0.688rem;
+}
+
+.wallet-item a{
+    display: flex;
+    align-items: center;
+    /* padding-left: 1.25rem; */
+    padding-right: 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #111;
+}
+
+.wallet-item:hover{
+    background-color: #f5f5f5;
+    box-shadow: -3px 9px 20px -11px rgba(5,4,4,0.63);
+    -webkit-box-shadow: -3px 9px 20px -11px rgba(5,4,4,0.63);
+    -moz-box-shadow: -3px 9px 20px -11px rgba(5,4,4,0.63);
+}
+
+.wallet-item span{
+    margin-left: 1rem;
+}
+
+
+.home-link{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0284c7;
+    min-width: 12rem;
+    max-width: 12rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 22rem;
+    /* margin-left: 1rem; */
+    transition: all .3s ease;
+}
+
+.home-button{
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.home-button span{
+    display: inline-block;
+    margin-left: 2.4rem;
+}
+
+.home-button svg{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    margin-left: 0.6rem;
+}
